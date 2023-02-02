@@ -2,8 +2,10 @@
 * Buy a domain, example: domain.com
 * We will call this tunnel **lab**
 * I will configure the next CNAME:
-** portainer.domain.com
-** 
+> portainer.domain.com
+> nextcloud.domain.com
+> pihole.domain.com
+> domain.com > for wordpress
 
 ## Install and setup Cloudflared
 ```
