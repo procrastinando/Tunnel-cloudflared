@@ -15,8 +15,18 @@ wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloud
 cloudflared tunnel login
 cloudflared tunnel create lab
 ```
+Create all the neccesary tunnels, in my case:
+```
+cloudflared tunnel route dns lab portainer.domain.com
+cloudflared tunnel route dns lab nextcloud.domain.com
+cloudflared tunnel route dns lab pihole.domain.com
+cloudflared tunnel route dns lab filezilla.domain.com
+cloudflared tunnel route dns lab domain.com
+```
 See the generated tunnel ID:
-```ls /root/.cloudflared```
+```
+ls /root/.cloudflared
+```
 For example: `xxxx-xxxx-xxxx-xxxx-xxxx.json`
 
 ## Create a `config.yml` file:
