@@ -48,9 +48,13 @@ ingress:
   - service: http_status:404
 ```
 Now, run the tunnel:
-```cloudflared tunnel run lab```
+```
+cloudflared tunnel run lab
+```
 To make it a service:
-```cloudflared service install```
+```
+cloudflared service install
+```
 To remove the service:
 ```
 systemctl stop cloudflared
