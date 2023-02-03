@@ -25,23 +25,23 @@ For example: `xxxx-xxxx-xxxx-xxxx-xxxx.json`
 tunnel: xxxx-xxxx-xxxx-xxxx-xxxx
 credentials-file: /root/.cloudflared/xxxx-xxxx-xxxx-xxxx-xxxx.json
 ingress:
-  - hostname: portainer.shifu.fun
+  - hostname: portainer.domain.com
     service: https://localhost:9443
     originRequest:
       noTLSVerify: true
-  - hostname: nextcloud.shifu.fun
+  - hostname: nextcloud.domain.com
     service: http://localhost:8888
     disableChunkedEncoding: true
     noHappyEyeballs: true
-  - hostname: pihole.shifu.fun
+  - hostname: pihole.domain.com
     service: http://localhost:80
     disableChunkedEncoding: true
     noHappyEyeballs: true
-  - hostname: filezilla.shifu.fun
+  - hostname: filezilla.domain.com
     service: http://localhost:3000
     disableChunkedEncoding: true
     noHappyEyeballs: true
-  - hostname: shifu.fun
+  - hostname: domain.com
     service: http://localhost:8080
     disableChunkedEncoding: true
     noHappyEyeballs: true
