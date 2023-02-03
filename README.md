@@ -47,4 +47,13 @@ ingress:
     noHappyEyeballs: true
   - service: http_status:404
 ```
-
+Now, run the tunnel:
+```cloudflared tunnel run lab```
+To make it a service:
+```cloudflared service install```
+To remove the service:
+```
+systemctl stop cloudflared
+rm -r /etc/systemd/system/cloudflared*
+rm -r /etc/cloudflared/
+```
