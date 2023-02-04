@@ -61,6 +61,8 @@ Now, run the tunnel:
 ```
 cloudflared tunnel run lab
 ```
+> If there is **"failed to sufficiently increase receive buffer size"** error, run `sysctl -w net.core.rmem_max=2500000`
+
 To make it a service:
 ```
 cloudflared service install
